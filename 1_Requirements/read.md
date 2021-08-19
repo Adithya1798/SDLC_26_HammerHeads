@@ -57,7 +57,7 @@
  
 | ID | Description | HLR ID | Status (Implemented/Future) |
 | ------ | --------- | ------ | ----- |
-| LR01 | Addition of two matrices can be done ,size of both the matrices need to be same size | HR01 |  IMPLEMENTED |
+| LR01 | Addition of two matrices can be done  and size of both the matrix need to be same | HR01 |  IMPLEMENTED |
 | LR02 | Subtraction of two matrices of two matrices can be  done | HR02 | IMPLEMENTED |
 | LR03 | Multiplication of two matrices can be  done | HR03 |  IMPLEMENTED  |
 | LR03 | Division of two matrices can be  done | HR04 |  IMPLEMENTED  |
