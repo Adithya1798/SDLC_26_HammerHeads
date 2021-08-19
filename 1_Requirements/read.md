@@ -5,7 +5,7 @@
 
 
 
- ### The features of the project
+ ## The features of the project
 
  * The program has dynamic memory allocation involved for allocating memory for the matrices, i.e 2 dimensional arrays. A structure is implemented for storing the input matrices. The user can select the opeation to be performed by pressing a number on the keyboard. The significance of each number, i.e the operation which it performs will be displayed on the screen during the execution of the program.
 
@@ -57,7 +57,6 @@
  
 | ID | Description | HLR ID | Status (Implemented/Future) |
 | ------ | --------- | ------ | ----- |
-
 | LR01 | Addition of two matrices can be done ,size of both the matrices need to be same size | HR01 |  IMPLEMENTED |
 | LR02 | Subtraction of two matrices of two matrices can be  done | HR02 | IMPLEMENTED |
 | LR03 | Multiplication of two matrices can be  done | HR03 |  IMPLEMENTED  |
