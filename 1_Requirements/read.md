@@ -17,6 +17,7 @@
 # SWOT ANALYSIS
 
 
+![SWOT-Sample] (https://github.com/Adithya1798/SDLC_26_HammerHeads/blob/main/1_Requirements/SWOT%20Analysis.png)
 
 
 # 4W&#39;s and 1&#39;H
