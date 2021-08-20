@@ -1,7 +1,7 @@
 # Introduction
 
  Matrices are used in many different areas of math. They are useful for calculating changes in two-dimensional motion and in making changes to large groups of data. This method of storage is compact, reliable, and versatile, as it can be converted into many different forms. 
- The  matrix multiplication system will able to provide results of any desired matrix size matrix. Mainly the  project focuses on matrix operations on square matrices. The operations performed on a pair of square matrices are, addition, subtraction, Division and multiplication. The operations performed on a single square matrix are, transpose, determinant and inverse.
+ The  matrix multiplication system will able to provide results of any desired matrix size matrix. Mainly the  project focuses on matrix operations on square matrices. The operations performed on a pair of square matrices are, addition, subtraction and multiplication. The operations performed on a single square matrix are, transpose, determinant and inverse.
 
 
 
