@@ -49,9 +49,8 @@
 | HR01 | user can add the matrices | Techincal |Technical| IMPLEMENTED |
 | HR02 | user can subtract the matrices | Techincal | IMPLEMENTED | 
 | HR03 | user can multiply the matrices | Techincal |  IMPLEMENTED  |
-| HR04 | user can divide  the matrices  | Techincal |  IMPLEMENTED  |
-| HR05 | user can also  find determinant, transpose and inverse of a matrix | Techincal |  IMPLEMENTED  |
-| HR06 | user can also  specify the size of the matrix| Techincal |  IMPLEMENTED  |
+| HR04 | user can also  find determinant, transpose and inverse of a matrix | Techincal |  IMPLEMENTED  |
+| HR05 | user can also  specify the size of the matrix| Techincal |  IMPLEMENTED  |
 ##  Low level Requirements:
  
 | ID | Description | HLR ID | Status (Implemented/Future) |
@@ -59,6 +58,5 @@
 | LR01 | Addition of two matrices can be done  and size of both the matrix need to be same | HR01 |  IMPLEMENTED |
 | LR02 | Subtraction of two matrices of two matrices can be  done | HR02 | IMPLEMENTED |
 | LR03 | Multiplication of two matrices can be  done | HR03 |  IMPLEMENTED  |
-| LR03 | Division of two matrices can be  done | HR04 |  IMPLEMENTED  |
-| LR05 | The determinant ,transpose of a single matrix of a specified size is implemented| HR05 |  IMPLEMENTED  |
-| LR06 | To find the inverse of a matrix, both the determinant function and the transpose functions are used in it. The condition that a matrix is invertible is to check if the determinant of the matrix is equal to 0. | HR05 |  IMPLEMENTED  |
+| LR04 | The determinant ,transpose of a single matrix of a specified size is implemented| HR04 |  IMPLEMENTED  |
+| LR05 | To find the inverse of a matrix, both the determinant function and the transpose functions are used in it. The condition that a matrix is invertible is to check if the determinant of the matrix is equal to 0. | HR04 |  IMPLEMENTED  |
