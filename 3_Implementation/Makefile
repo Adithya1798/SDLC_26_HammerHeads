@@ -55,5 +55,5 @@ coverageCheck:
 
 # Remove all the built files, invoke by `make clean`
 clean:
-	rm -rf $(PROJECT_OUTPUT) $(TEST_OUTPUT) $(DOCUMENTATION_OUTPUT)
+	rm -rf $(PROJECT_OUTPUT) $(TEST_OUTPUT) $(DOCUMENTATION_OUTPUT) 
 
