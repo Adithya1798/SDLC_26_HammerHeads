@@ -69,7 +69,7 @@ void matrixcalc_menu(void)
 
     if(INVALID != oper_valid(matrixcalc_oper))
     {
-        printf("\n\tEnter your matrix elements with space between them\n");
+        printf("\n\tEnter your matrix elements with space  between them\n");
 
         printf("Enter order of matrix: ");
         scanf("%d", &n);
