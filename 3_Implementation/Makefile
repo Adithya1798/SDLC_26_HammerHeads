@@ -19,7 +19,6 @@ TEST_OUTPUT = Test_$(PROJECT_NAME).out
 INC	= -Iinc\
 -Iunity\
 
-
 # Project Output name
 PROJECT_OUTPUT = $(PROJECT_NAME).out
 
@@ -48,6 +47,7 @@ test:$(BUILD)
 	gcc $(TEST_SRC) $(INC) -o $(TEST_OUTPUT)
 	./$(TEST_OUTPUT)
 
+
 #Coverage 
 coverageCheck: 
 	g++ -fprofile-arcs -ftest-coverage -fPIC -O0 $(TEST_SRC) $(INC) -o $(TEST_OUTPUT)
@@ -56,4 +56,3 @@ coverageCheck:
 # Remove all the built files, invoke by `make clean` 
 clean:
 	rm -rf $(PROJECT_OUTPUT) $(TEST_OUTPUT) $(DOCUMENTATION_OUTPUT) 
-
