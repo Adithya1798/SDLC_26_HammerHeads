@@ -512,7 +512,7 @@ error_t transpose(float **matrix,int n){
 
     printf("The Transpose of the matrix is: \n");
     output_matrix(result,n);
-    
+    free(result);
     return SUCCESS;
 
 }
