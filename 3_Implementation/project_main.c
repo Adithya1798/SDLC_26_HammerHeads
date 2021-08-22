@@ -21,7 +21,6 @@ int n;
 mat operands;
 error_t err;
 
-
 /* Valid opers */
 enum opers{ DET=1,ADD,SUB,MUL,TRN,INV,EXIT };
 
@@ -29,7 +28,6 @@ enum opers{ DET=1,ADD,SUB,MUL,TRN,INV,EXIT };
 void matrixcalc_menu(void);
 /* Verifies the requested operations validity */
 int oper_valid(int oper);
-
 
 /* Start of the application */
 /**
@@ -47,7 +45,6 @@ int main(int argc, char *argv[])
         matrixcalc_menu();
     }
 }
-
 /**
  * @brief A basic function which has the functionalities to input the matrices and print the respective output with choice
  * 
@@ -123,8 +120,6 @@ void matrixcalc_menu(void)
             printf("\n\t---The code would never arrive here---\n");
     }
 }
-
-
 /**
  * @brief A function to check if the entered number is within the limits of the set of operations specified
  * 
