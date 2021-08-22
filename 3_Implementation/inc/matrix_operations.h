@@ -1,9 +1,8 @@
 /**
  * @file matrix_operations.h
- * @author Hemanth A (hemanth.ec17@bmsce.ac.in)
  * @brief A program to calculate various operations on a matrix
  * @version 0.1
- * @date 2021-04-13
+ * @date 2021-08-21
  * 
  * @copyright Copyright (c) 2021
  * 
