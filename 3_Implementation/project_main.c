@@ -124,6 +124,7 @@ void matrixcalc_menu(void)
     }
 }
 
+
 /**
  * @brief A function to check if the entered number is within the limits of the set of operations specified
  * 
