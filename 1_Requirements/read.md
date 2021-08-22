@@ -21,18 +21,18 @@
 # 4W&#39;s and 1&#39;H
 
 ## Who:
- * students solve complicated problems quickly and in an efficient manner.
- * Researchers and mathematician and Software engineers
+ * Students solve complicated problems quickly and in an efficient manner.
+ * Researchers and mathematician and software engineers
 
 
 ## What:
- * To find Transpose ,inverse of a single matrix and determinant.
- * On a pair of matrix  we can find the sum ,product ,differences and division.
+ * To find the transpose, inverse of a single matrix and determinant.
+ * On a pair of matrix  we can find the sum, product, differences and division.
 
 
 ## When:
- * Can  solve complex matrix by students,researchers.
- * Student can use this calculator when they face a difficulty in solving a matrix related problem.
+ * Can  solve complex matrix by students, researchers.
+ * Students can use this calculator when they face a difficulty in solving a matrix related problem.
 
 
 
@@ -40,7 +40,7 @@
  * Students, employees and researchers all over the world.
 
 ## How:
- * Can be executed in a system which has  Windows operating system or Linux.
+ * Can be executed in a system which has Windows operating system or Linux.
 
 
  ## High Level Requirements: 
