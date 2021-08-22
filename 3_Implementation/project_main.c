@@ -1,9 +1,8 @@
 /**
  * @file project_main.c
- * @author Hemanth A (hemanth.ec17@bmsce.ac.in)
  * @brief  This is the main program where the project is run
  * @version 0.1
- * @date 2021-04-15
+ * @date 2021-08-21
  * 
  * @copyright Copyright (c) 2021
  * 
