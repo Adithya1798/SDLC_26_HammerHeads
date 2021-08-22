@@ -1,6 +1,6 @@
 
 #include "matrix_operations.h"
- #include "matrix_operations.c"
+#include "matrix_operations.c"
 
 /* Status of the operation requested */
 #define VALID   (1)
