@@ -1,21 +1,21 @@
-# Name of the project
+#Name of the project
 PROJECT_NAME = Matrix_Calculator
 
 #Doxyfile folder
 DOC = doc
 
-# All source code files
+#All source code files
 SRC = project_main.c\
 src/matrix_operations.c
 
-# All test source files
+#All test source files
 TEST_SRC = src/matrix_operations.c\
 test/test_matrix_operations.c\
 unity/unity.c\
 
 TEST_OUTPUT = Test_$(PROJECT_NAME).out
 
-# All include folders with header files
+#All include folders with header files
 INC	= -Iinc\
 -Iunity\
 
