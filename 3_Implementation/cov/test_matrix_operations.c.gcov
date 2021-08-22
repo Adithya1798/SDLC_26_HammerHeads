@@ -236,5 +236,6 @@
         -:  231:
     #####:  232:TEST_ASSERT_EQUAL(SUCCESS,transpose(test_mat1,3));
         -:  233:
-        -:  234:
-    #####:  235:}
+    #####:  234:free(test_mat1);
+        -:  235:
+    #####:  236:}
