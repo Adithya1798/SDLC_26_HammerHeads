@@ -1,12 +1,4 @@
-/**
- * @file project_main.c
- * @brief  This is the main program where the project is run
- * @version 0.1
- * @date 2021-08-21
- * 
- * @copyright Copyright (c) 2021
- * 
- */
+
 #include "matrix_operations.h"
 
 /* Status of the operation requested */
