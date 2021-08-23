@@ -1,0 +1,539 @@
+        -:    0:Source:matrix_operations.c
+        -:    0:Graph:test_operations.gcno
+        -:    0:Data:test_operations.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:
+        -:    2:#include "matrix_operations.h"
+        -:    3:
+        -:    4:/**
+        -:    5: * @brief This function determines the type of input matrix
+        -:    6: * @param matrix
+        -:    7: * @param n
+        -:    8: */
+        -:    9:
+    #####:   10: void detertype( float ** matrix ,int n){
+        -:   11:
+    #####:   12: int scaler(float ** m,int n){
+        -:   13:     int i,j;
+    #####:   14:     int point=0;
+    #####:   15:     for(int i=0;i<n;i++){
+    #####:   16:        for(int j=0;j<n;j++){
+    #####:   17:             if(i!=j && matrix[i][j]!=0)
+        -:   18:        {
+    #####:   19:            point=1;
+    #####:   20:            break;
+        -:   21:        }
+    #####:   22:        if(i==j && matrix[i][j]!=matrix[i][j])
+        -:   23:        {
+    #####:   24:            point=1;
+    #####:   25:            break;
+        -:   26:        }
+        -:   27:
+        -:   28:     }
+        -:   29:
+        -:   30:   }
+    #####:   31:   return point;
+        -:   32: }
+        -:   33:
+    #####:   34: int symmetric(float ** m,int n){
+        -:   35:
+    #####:   36:    int symmetric=0;
+    #####:   37:    int skew=0;
+        -:   38:
+    #####:   39:             for(int i=0;i<n;i++){
+    #####:   40:             for(int j=0;j<n;j++){
+    #####:   41:               if(m[i][j] != m[j][i]){
+    #####:   42:                    symmetric=1;
+    #####:   43:                    break;
+        -:   44:                    }
+        -:   45:                }
+        -:   46:             }
+    #####:   47:             return symmetric;
+        -:   48:
+        -:   49: }
+        -:   50:
+    #####:   51: int upper_triangular(float ** matrix, int n){
+        -:   52:
+    #####:   53:    for(int i=1; i<n; i++)
+        -:   54:    {
+    #####:   55:        for(int j=0; j<i; j++)
+        -:   56:        {
+    #####:   57:         if(matrix[i][j]!=0){ return 1; }
+        -:   58:    }
+        -:   59:    }
+        -:   60:
+    #####:   61:   return 0;
+        -:   62: }
+        -:   63:
+    #####:   64:  int lower_triangular(float ** matrix, int n){
+        -:   65:
+    #####:   66:    for(int i=0; i<n; i++)
+        -:   67:    {
+    #####:   68:        for(int j=i+1; j<n; j++)
+        -:   69:        {
+    #####:   70:         if(matrix[i][j]!=0){ return 1; }
+        -:   71:    }
+        -:   72:    }
+        -:   73:
+    #####:   74:   return 0;
+        -:   75: }
+        -:   76:
+    #####:   77: int unity(float ** matrix,int n){
+    #####:   78:     int flag=0;
+        -:   79:
+    #####:   80: for(int i=0;i<n;i++){
+    #####:   81:    for(int j=0;j<n;j++){
+    #####:   82:        if(i==j && matrix[i][j]!=1){
+    #####:   83:            flag=1;
+    #####:   84:            break;
+        -:   85:        }
+    #####:   86:       else if(i!=j && matrix[i][j]!=0){
+    #####:   87:            flag=1;
+    #####:   88:            break;
+        -:   89:        }
+        -:   90:    }
+        -:   91: }
+    #####:   92: printf("%d",flag);
+    #####:   93: return flag;
+        -:   94:}
+        -:   95:
+        -:   96:
+    #####:   97:int zero(float ** matrix,int n){
+    #####:   98:int flag=0;
+    #####:   99:for(int i=0;i<n;i++){
+    #####:  100:    for(int j=0;j<n;j++){
+    #####:  101:        if(matrix[i][j]!=0){
+    #####:  102:                flag=1;
+    #####:  103:            break;
+        -:  104:        }
+        -:  105:    }
+        -:  106:}
+    #####:  107:return flag;
+        -:  108:}
+        -:  109:
+    #####:  110:int diagonal(float ** matrix, int n){
+    #####:  111:int flag=1;
+    #####:  112:for(int i=0;i<n;i++){
+    #####:  113:        int flag=1;
+    #####:  114:    for(int j=0;j<n;j++){
+    #####:  115:        if(i==j && matrix[i][j]==0){
+    #####:  116:         flag=0;
+        -:  117:        }
+    #####:  118:        else if(i!=j && matrix[i][j]!=0){
+    #####:  119:            flag=0;
+        -:  120:        }
+        -:  121:    }
+        -:  122:}
+    #####:  123:return flag;
+        -:  124:}
+        -:  125:
+    #####:  126:int orthogonal(float ** matrix,int n){
+        -:  127:
+    #####:  128:int result[n][n];
+    #####:  129:for (int i = 0; i < n; i++)
+    #####:  130:    for (int j = 0; j < n; j++)
+    #####:  131:    result[i][j] = matrix[j][i];
+        -:  132:
+    #####:  133:int prod[n][n];
+    #####:  134:for (int i = 0; i < n; i++)
+        -:  135:{
+    #####:  136:    for (int j = 0; j < n; j++)
+        -:  137:    {
+        -:  138:
+    #####:  139:    int sum = 0;
+    #####:  140:    for (int k = 0; k < n; k++)
+        -:  141:    {
+    #####:  142:        sum = sum + (matrix[i][k] * matrix[j][k]);
+        -:  143:    }
+        -:  144:
+    #####:  145:    prod[i][j] = sum;
+        -:  146:    }
+        -:  147:}
+        -:  148:
+    #####:  149:for (int i = 0; i < n; i++)
+        -:  150:{
+    #####:  151:    for (int j = 0; j < n; j++)
+        -:  152:    {
+    #####:  153:    if (i != j && prod[i][j] != 0)
+    #####:  154:        return 1;
+    #####:  155:    if (i == j && prod[i][j] != 1)
+    #####:  156:        return 1;
+        -:  157:    }
+        -:  158:}
+        -:  159:
+    #####:  160:return 0;
+        -:  161:}
+        -:  162:
+    #####:  163: if(0==scaler(matrix,n)){
+    #####:  164:  printf("\n The given matrix is SCALER!!..");
+    #####:  165:  printf("\n");
+        -:  166: }
+    #####:  167: if(0==symmetric(matrix,n)){
+    #####:  168:               printf("\n The given matrix is Symmetric!!!.. ");
+    #####:  169:               printf("\n");
+        -:  170: }
+        -:  171:
+    #####:  172: if (0==upper_triangular(matrix,n)){
+    #####:  173:         printf("\n The given matrix is Upper  Triangular!!..");
+        -:  174: }
+    #####:  175: if (0==lower_triangular(matrix,n)){
+    #####:  176:         printf("\n The given matrix is Lower Triangular!!..");
+        -:  177: }
+        -:  178:
+    #####:  179: if(0==unity(matrix,n)){
+    #####:  180:    printf("\n The given matrix is Unity!!!.. ");
+    #####:  181:               printf("\n");
+        -:  182: }
+    #####:  183: if(0==zero(matrix,n)){
+    #####:  184:    printf("\n The given matrix is Zero!!!.. ");
+    #####:  185:    printf("\n");
+        -:  186: }
+    #####:  187: if(1==diagonal(matrix,n)){
+    #####:  188:    printf("\n The given matrix is Diagonal!!!.. ");
+    #####:  189:    printf("\n");
+        -:  190: }
+    #####:  191:if(0== orthogonal(matrix,n)){
+    #####:  192:    printf("\n The matrix is Orthogonal!!..");
+    #####:  193:    printf("\n");
+        -:  194:}
+    #####:  195: }
+        -:  196:
+        -:  197:
+        -:  198:
+        -:  199:/**
+        -:  200: * @brief This function frees the dynamically allocated memory in the structure
+        -:  201: *
+        -:  202: * @param m
+        -:  203: */
+        -:  204:
+        -:  205:
+    #####:  206:void free_matrix_structure(mat *m){
+    #####:  207:    free(m->matrix_1);
+    #####:  208:    free(m->matrix_2);
+    #####:  209:}
+        -:  210:
+        -:  211:/**
+        -:  212: * @brief A function to dynamically allocate the memory for the matrix
+        -:  213: *
+        -:  214: * @param matrix
+        -:  215: * @param n
+        -:  216: */
+    #####:  217:void dynamic_alloc_mat(float **matrix,int n){
+    #####:  218:    matrix = (float **)calloc(n,sizeof(float));
+    #####:  219:    for(int i=0;i<n;i++){
+    #####:  220:        matrix[i] = (float *)calloc(n,sizeof(float));
+        -:  221:    }
+    #####:  222:}
+        -:  223:
+        -:  224:
+        -:  225:
+        -:  226:/**
+        -:  227: * @brief A function to allocate memory and input the matrix elements
+        -:  228: *
+        -:  229: * @param matrix
+        -:  230: * @param n
+        -:  231: * @return float**
+        -:  232: */
+    #####:  233:float ** alloc_input_matrix(float **matrix,int n){
+        -:  234:    int i,j;
+    #####:  235:    matrix = (float **)calloc(n,sizeof(float));  //dynamically allocate memory for array of pointers
+    #####:  236:    for(i=0;i<n;i++){
+    #####:  237:        matrix[i] = (float *)calloc(n,sizeof(float)); // memory assisgned for the array elements.
+        -:  238:    }
+        -:  239:
+        -:  240:    float element;
+    #####:  241:    printf("Enter the matrix: \n");
+    #####:  242:    for(i = 0; i < n; i++){
+    #####:  243:        for(j = 0; j < n; j++){
+    #####:  244:            scanf("%f", &element);
+    #####:  245:            matrix[i][j]= element;   //  matrix[i][j] same as *(*(matrix+i)+j)
+        -:  246:        }
+        -:  247:    }
+    #####:  248:    return matrix;
+        -:  249:}
+        -:  250:
+        -:  251:/**
+        -:  252: * @brief A function to output the matrix
+        -:  253: *
+        -:  254: * @param matrix
+        -:  255: * @param n
+        -:  256: */
+        -:  257:
+        5:  258:void output_matrix(float **matrix,int n){
+        -:  259:    int i,j;
+        -:  260:    float x;
+       17:  261:    for(i = 0; i < n; i++){
+       42:  262:        for(j = 0; j < n; j++){
+        -:  263:
+       30:  264:            printf("%f ", matrix[i][j]);
+        -:  265:        }
+       12:  266:        printf("\n");
+        -:  267:    }
+        5:  268:    printf("\n\n\n");
+        5:  269:}
+        -:  270:
+        -:  271:
+        -:  272:/**
+        -:  273: * @brief A function to add two matrices
+        -:  274: *
+        -:  275: * @param matrix1
+        -:  276: * @param matrix2
+        -:  277: * @param n
+        -:  278: * @return error_t
+        -:  279: */
+        1:  280:error_t add_matrices(float **matrix1,float **matrix2, int n){
+        -:  281:    int i,j;
+        -:  282:    float **result;
+        -:  283:
+        1:  284:    result = (float **)calloc(n,sizeof(float));
+        3:  285:    for(int i=0;i<n;i++){
+        2:  286:        result[i] = (float *)calloc(n,sizeof(float));
+        -:  287:    }
+        3:  288:    for(i = 0; i < n; i++){
+        6:  289:        for(j = 0; j < n; j++){
+        4:  290:            result[i][j] = matrix1[i][j] + matrix2[i][j];
+        -:  291:
+        -:  292:        }
+        -:  293:    }
+        -:  294:
+        1:  295:    printf("The sum of the matrices is: \n");
+        1:  296:    output_matrix(result,n);
+        1:  297:    free(result);
+        1:  298:    return SUCCESS;
+        -:  299:
+        -:  300:}
+        -:  301:
+        -:  302:/**
+        -:  303: * @brief A function to subtract 2 matrices
+        -:  304: *
+        -:  305: * @param matrix1
+        -:  306: * @param matrix2
+        -:  307: * @param n
+        -:  308: * @return error_t
+        -:  309: */
+        1:  310:error_t subtract_matrices(float **matrix1,float **matrix2, int n){
+        -:  311:    int i,j;
+        -:  312:    float **result;
+        1:  313:    result = (float **)calloc(n,sizeof(float));
+        3:  314:    for(int i=0;i<n;i++){
+        2:  315:        result[i] = (float *)calloc(n,sizeof(float));
+        -:  316:    }
+        3:  317:    for(i = 0; i < n; i++){
+        6:  318:        for(j = 0; j < n; j++){
+        4:  319:            result[i][j] = matrix1[i][j] - matrix2[i][j];
+        -:  320:        }
+        -:  321:    }
+        1:  322:    printf("The difference of the matrices is: \n");
+        1:  323:    output_matrix(result,n);
+        1:  324:    free(result);
+        1:  325:    return SUCCESS;
+        -:  326:}
+        -:  327:
+        -:  328:/**
+        -:  329: * @brief A function to find the product of 2 matrices
+        -:  330: *
+        -:  331: * @param matrix1
+        -:  332: * @param matrix2
+        -:  333: * @param n
+        -:  334: * @return error_t
+        -:  335: */
+        1:  336:error_t product_matrices(float **matrix1,float **matrix2, int n){
+        -:  337:    int i,j,k;
+        -:  338:    float **result;
+        1:  339:    result = (float **)calloc(n,sizeof(float));
+        3:  340:    for(int i=0;i<n;i++){
+        2:  341:        result[i] = (float *)calloc(n,sizeof(float));
+        -:  342:    }
+        3:  343:    for(i = 0; i < n; i++){
+        6:  344:        for(j = 0; j < n; j++){
+        4:  345:            result[i][j] = 0;
+       12:  346:            for(k = 0;k < n; k++){
+        8:  347:            result[i][j]+= matrix1[i][k] * matrix2[k][j];
+        -:  348:            }
+        -:  349:    }
+        -:  350:    }
+        -:  351:
+        1:  352:    printf("The product of the matrices is: \n");
+        1:  353:    output_matrix(result,n);
+        1:  354:    free(result);
+        1:  355:    return SUCCESS;
+        -:  356:}
+        -:  357:
+        -:  358:/**
+        -:  359: * @brief A function to find the determinant of a matrix
+        -:  360: *
+        -:  361: * @param matrix
+        -:  362: * @param k
+        -:  363: * @return float
+        -:  364: */
+       40:  365:float determinant(float **matrix,int k)
+        -:  366:{
+        -:  367:
+       40:  368:    float s = 1, det = 0, **b;
+       40:  369:    b = (float **)calloc(k,sizeof(float));
+       95:  370:    for(int ai=0;ai<k;ai++){
+       55:  371:        b[ai] = (float *)calloc(k,sizeof(float));
+        -:  372:    }
+        -:  373:  int i, j, m, n, c;
+       40:  374:  if (k == 1)
+        -:  375:    {
+       26:  376:     return (matrix[0][0]);
+        -:  377:    }
+        -:  378:  else
+        -:  379:    {
+       14:  380:     det = 0;
+       43:  381:     for (c = 0; c < k; c++)
+        -:  382:       {
+       29:  383:        m = 0;
+       29:  384:        n = 0;
+       90:  385:        for (i = 0;i < k; i++)
+        -:  386:          {
+      192:  387:            for (j = 0 ;j < k; j++)
+        -:  388:              {
+      131:  389:                b[i][j] = 0;
+      131:  390:                if (i != 0 && j != c)
+        -:  391:                 {
+       38:  392:                   b[m][n] = matrix[i][j];
+       38:  393:                   if (n < (k - 2))
+        6:  394:                    n++;
+        -:  395:                   else
+        -:  396:                    {
+       32:  397:                     n = 0;
+       32:  398:                     m++;
+        -:  399:                     }
+        -:  400:                   }
+        -:  401:               }
+        -:  402:             }
+       29:  403:          det = det + s * (matrix[0][c] * determinant(b, k - 1));
+       29:  404:          s = -1 * s;
+        -:  405:          }
+        -:  406:    }
+       14:  407:    free(b);
+       14:  408:    return (det);
+        -:  409:
+        -:  410:}
+        -:  411:
+        -:  412:/**
+        -:  413: * @brief A function to find the inverse of a matrix
+        -:  414: *
+        -:  415: * @param num
+        -:  416: * @param f
+        -:  417: * @return error_t
+        -:  418: */
+        1:  419:error_t inverse(float **num, int f)
+        -:  420:{
+        -:  421:
+        -:  422:
+        -:  423: float **matb, **fac,**transp, **invers, d;
+        -:  424:
+        -:  425:    int mem;
+        1:  426:    matb = (float **)calloc(f,sizeof(float));
+        1:  427:    fac = (float **)calloc(f,sizeof(float));
+        1:  428:    transp = (float **)calloc(f,sizeof(float));
+        1:  429:    invers = (float **)calloc(f,sizeof(float));
+        4:  430:    for(int mem=0;mem<f;mem++){
+        3:  431:        matb[mem] = (float *)calloc(f,sizeof(float));
+        3:  432:        fac[mem] = (float *)calloc(f,sizeof(float));
+        3:  433:        transp[mem] = (float *)calloc(f,sizeof(float));
+        3:  434:        invers[mem] = (float *)calloc(f,sizeof(float));
+        -:  435:    }
+        -:  436:
+        -:  437:
+        -:  438: int p, q, m, n, i, j;
+        4:  439: for (q = 0;q < f; q++)
+        -:  440: {
+       12:  441:   for (p = 0;p < f; p++)
+        -:  442:    {
+        9:  443:     m = 0;
+        9:  444:     n = 0;
+       36:  445:     for (i = 0;i < f; i++)
+        -:  446:     {
+      108:  447:       for (j = 0;j < f; j++)
+        -:  448:        {
+       81:  449:          if (i != q && j != p)
+        -:  450:          {
+       36:  451:            matb[m][n] = num[i][j];
+       36:  452:            if (n < (f - 2))
+       18:  453:             n++;
+        -:  454:            else
+        -:  455:             {
+       18:  456:               n = 0;
+       18:  457:               m++;
+        -:  458:               }
+        -:  459:            }
+        -:  460:        }
+        -:  461:      }
+        9:  462:      fac[q][p] = power(q + p) * determinant(matb, f - 1);
+        -:  463:    }
+        -:  464:  }
+        -:  465:
+        1:  466:  d = determinant(num, f);
+        4:  467:    for (i = 0;i < f; i++)
+        -:  468:    {
+       12:  469:     for (j = 0;j < f; j++)
+        -:  470:       {
+        9:  471:         transp[i][j] = fac[j][i];
+        -:  472:        }
+        -:  473:    }
+        -:  474:
+        4:  475:  for (i = 0;i < f; i++)
+        -:  476:    {
+       12:  477:     for (j = 0;j < f; j++)
+        -:  478:       {
+        9:  479:        invers[i][j] = transp[i][j] / d;
+        -:  480:        }
+        -:  481:    }
+        1:  482:    printf("Inverse is :\n");
+        1:  483:    output_matrix(invers,f);
+        1:  484:  free(matb);
+        1:  485:  free(fac);
+        1:  486:  free(transp);
+        1:  487:  free(invers);
+        1:  488:  return SUCCESS;
+        -:  489:  }
+        -:  490:
+        -:  491:/**
+        -:  492: * @brief A function to find the transpose of a matrix
+        -:  493: *
+        -:  494: * @param matrix
+        -:  495: * @param n
+        -:  496: * @return error_t
+        -:  497: */
+        1:  498:error_t transpose(float **matrix,int n){
+        -:  499:    float **result;
+        -:  500:    int i,j;
+        1:  501:    result = (float **)calloc(n,sizeof(float));
+        4:  502:    for(int i=0;i<n;i++){
+        3:  503:        result[i] = (float *)calloc(n,sizeof(float));
+        -:  504:    }
+        4:  505:    for (i = 0;i < n; i++)
+        -:  506:    {
+       12:  507:     for (j = 0;j < n; j++)
+        -:  508:       {
+        9:  509:         result[i][j] = matrix[j][i];
+        -:  510:        }
+        -:  511:    }
+        -:  512:
+        1:  513:    printf("The Transpose of the matrix is: \n");
+        1:  514:    output_matrix(result,n);
+        1:  515:    free(result);
+        1:  516:    return SUCCESS;
+        -:  517:
+        -:  518:}
+        -:  519:
+        -:  520:/**
+        -:  521: * @brief A function to find the power of (-1)
+        -:  522: *
+        -:  523: * @param exp
+        -:  524: * @return float
+        -:  525: */
+       11:  526:float power(int exp){
+       11:  527:    float result=1;
+       34:  528:    while(exp != 0){
+       23:  529:        result*=(-1);
+       23:  530:        exp--;
+        -:  531:    }
+       11:  532:    return result;
+        -:  533:
+        -:  534:}
