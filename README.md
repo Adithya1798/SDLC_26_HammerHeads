@@ -15,6 +15,7 @@ Folder             | Description
 `2_Design`         | Documents specifying design details
 `3_Implementation` | All code and documentation
 `4_Test_plan`      | Documents with test plans and procedures
+`5_Images`         | Output screenshots
 
 ## Contributors List and Summary
 
@@ -26,7 +27,7 @@ PS No. |  Name   |    Features    | Issuess Raised |Issues Resolved|No Test Case
 | -----------|---------|
 |F_01| Options to select matrix operation|
 |F_02| Operations on two matrices such as addition, subtraction and multiplication are included|
-|F_03| Single matrix operations such as determinant, transpose and inverse of a matrix |
+|F_03| Single matrix operations such as determinant, transpose, inverse and type of a matrix |
 |F_04| Separate function for each operation |
 |F_05| A structure has been implemented for storing the matrices|
 |F_06| Dynamic memory allocation and deallocation has been implemented for the matrices|
