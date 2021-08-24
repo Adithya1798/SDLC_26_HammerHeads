@@ -1,4 +1,4 @@
-
+#include "unity.h"
 #include "matrix_operations.h"
 
 #define PROJECT_NAME   "Matrix Calculator"
