@@ -45,7 +45,7 @@
  * Can be executed in a system which has Windows operating system or Linux.
 
 
-## HIGH LEVEL REQUIREMENTS: 
+## HIGH LEVEL REQUIREMENTS : 
 | ID | Description | Category | Status | 
 | ----- | ----- | ------- | ---------|
 | HR01 | user can add the matrices | Techincal |Technical| IMPLEMENTED |
@@ -54,7 +54,7 @@
 | HR04 | user can also  find determinant, transpose and inverse of a matrix | Techincal |  IMPLEMENTED  |
 | HR05 | user can also  specify the size of the matrix| Techincal |  IMPLEMENTED  |
 
-##  LOE LEVEL REQUIREMENTS:
+##  LOE LEVEL REQUIREMENTS :
  
 | ID | Description | HLR ID | Status (Implemented/Future) |
 | ------ | --------- | ------ | ----- |
