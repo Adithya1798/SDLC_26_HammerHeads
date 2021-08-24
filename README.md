@@ -3,10 +3,6 @@
 ![images matrix](https://user-images.githubusercontent.com/82052062/130574181-41d500d6-9777-4bc1-ace4-3405fb86e7bd.png)
 
 
-Build | Code Quality | [Git Inspector](using github.io option)
-------|----------|-------|--------------
-[![C/C++ CI - Build Status](https://github.com/Adithya1798/SDLC_26_HammerHeads/actions/workflows/c-cpp.yml/badge.svg)](https://github.com/Adithya1798/SDLC_26_HammerHeads/actions/workflows/c-cpp.yml) |  [![Code Quality - Static Code - Cppcheck](https://github.com/Adithya1798/SDLC_26_HammerHeads/actions/workflows/cppcheck.yml/badge.svg)](https://github.com/Adithya1798/SDLC_26_HammerHeads/actions/workflows/cppcheck.yml) | [![Contribution Check - Git Inspector](https://github.com/Adithya1798/SDLC_26_HammerHeads/actions/workflows/gitinspector.yml/badge.svg)](https://github.com/Adithya1798/SDLC_26_HammerHeads/actions/workflows/gitinspector.yml)
-
 
 ## Folder Structure
 Folder             | Description
