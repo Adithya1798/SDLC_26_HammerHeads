@@ -25,6 +25,9 @@ PS No.    |  Name   |    Features    | Issuess Raised |Issues Resolved|No Test C
   99005595|Kajjapu Vaishnavi|F_02| 0 | 0 | 3| 3 
   99005588|Akshatha N K| F_06 | 0 | 0 | 3 | 3
   99005603|Aswathy R. Ullas| F_04 | 0 | 0 | 2 | 2 |
+  99005619|Chandana s| F_05 | 0 | 0 | 2 | 2 |
+  99005603|Adithya Aras | F_07 | 0 | 0 | 2 | 2 |
+
 
 | Feature Id | Feature |
 | -----------|---------|
