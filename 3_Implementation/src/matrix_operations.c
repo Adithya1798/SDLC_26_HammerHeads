@@ -12,8 +12,7 @@
 
 /**
  * @brief This function determines the type of input matrix
- * @brief This function determines the type of input matrix
- * @param matrix  calculator
+
  * 
  */
 
