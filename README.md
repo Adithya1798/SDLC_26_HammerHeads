@@ -2,9 +2,8 @@
 ### Miniproject 
 ![images matrix](https://user-images.githubusercontent.com/82052062/130574181-41d500d6-9777-4bc1-ace4-3405fb86e7bd.png)
 
-Build | Code Quality | Unity | [Git Inspector](using github.io option)
-------|----------|-------|--------------
-
+[![Contribution Check - Git Inspector](https://github.com/Adithya1798/SDLC_26_HammerHeads/actions/workflows/gitinspector.yml/badge.svg)](https://github.com/Adithya1798/SDLC_26_HammerHeads/actions/workflows/gitinspector.yml)
+[![C/C++ CI - Build Status](https://github.com/Adithya1798/SDLC_26_HammerHeads/actions/workflows/c-cpp.yml/badge.svg)](https://github.com/Adithya1798/SDLC_26_HammerHeads/actions/workflows/c-cpp.yml)
 
 
 
