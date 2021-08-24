@@ -5,7 +5,7 @@
 
 Build | Code Quality | Unity | [Git Inspector](using github.io option)
 ------|----------|-------|--------------
-
+[![C/C++ CI - Build Status](https://github.com/Adithya1798/SDLC_26_HammerHeads/actions/workflows/c-cpp.yml/badge.svg)](https://github.com/Adithya1798/SDLC_26_HammerHeads/actions/workflows/c-cpp.yml) | 
 
 
 ## Folder Structure
