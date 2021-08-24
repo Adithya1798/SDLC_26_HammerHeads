@@ -1,17 +1,17 @@
-# Introduction
+# INTRODUCTION
 
  Matrices are used in many different areas of math. They are useful for calculating changes in two-dimensional motion and in making changes to large groups of data. This method of storage is compact, reliable, and versatile, as it can be converted into many different forms. 
  The  matrix multiplication system will able to provide results of any desired matrix size. Mainly the  project focuses on matrix operations on square matrices. The operations performed on a pair of square matrices are, addition, subtraction and multiplication. The operations performed on a single square matrix are transpose, determinant, inverse and to check the type of matrix be it scaler, triangular, orthogonal, diagonal, zero,  unit or  symmetric.
 
 
 
-## The features of the project
+## THE FEATURES OF THE PROJECT
 
 * The program has dynamic memory allocation involved for allocating memory for the matrices i.e 2 dimensional arrays. A structure is implemented for storing the input matrices.
 * The user can select the opeation to be performed by pressing a number on the keyboard. The significance of each number, i.e the operation which it performs will be displayed on the screen during the execution of the program.
 * Another important feature is that our program involves dynamic memory allocation for the input and after the request is processed the memory is freed leading to judicial utilization of the memory.
 
-## Defining Our System
+## DEFINING OF THE SYSTEM
 
 * The system on the whole is viewed as a blackbox which accepts input of a single number. Then the mapping of the number is done so as to perform the appropriate function. Then the user will be prompted to enter the matrix size. After that the user is prompted to enter the matrix elements. The input is stored in 2D arrays which are dynamically allocated and passed to the respective functions. Then the output is printed on the screen. This whole process is in a loop until the user presses a key which will exit the program.
 
