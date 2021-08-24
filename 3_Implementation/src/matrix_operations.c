@@ -13,7 +13,7 @@
 /**
  * @brief This function determines the type of input matrix
  * @param matrix calculator
- * @param n
+ * @param 
  */
 
  void detertype( float ** matrix ,int n){
