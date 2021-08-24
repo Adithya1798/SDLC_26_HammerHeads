@@ -2,6 +2,10 @@
 ### Miniproject 
 ![images matrix](https://user-images.githubusercontent.com/82052062/130574181-41d500d6-9777-4bc1-ace4-3405fb86e7bd.png)
 
+Build | Code Quality | Unity | [Git Inspector](using github.io option)
+------|----------|-------|--------------
+
+
 
 
 ## Folder Structure
