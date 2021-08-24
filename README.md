@@ -6,7 +6,7 @@ Build | Code Quality | [Git Inspector](using github.io option)| Code Coverage | 
 ------|----------|--------------|---------------------|---------------
 [![C/C++ CI - Build Status](https://github.com/Adithya1798/SDLC_26_HammerHeads/actions/workflows/c-cpp.yml/badge.svg)](https://github.com/Adithya1798/SDLC_26_HammerHeads/actions/workflows/c-cpp.yml) | [![Code Quality - Static Code - Cppcheck](https://github.com/Adithya1798/SDLC_26_HammerHeads/actions/workflows/cppcheck.yml/badge.svg)](https://github.com/Adithya1798/SDLC_26_HammerHeads/actions/workflows/cppcheck.yml)|[![Contribution Check - Git Inspector](https://github.com/Adithya1798/SDLC_26_HammerHeads/actions/workflows/gitinspector.yml/badge.svg)](https://github.com/Adithya1798/SDLC_26_HammerHeads/actions/workflows/gitinspector.yml)| [![CI](https://github.com/Adithya1798/SDLC_26_HammerHeads/actions/workflows/main.yml/badge.svg)](https://github.com/Adithya1798/SDLC_26_HammerHeads/actions/workflows/main.yml) | [![Unit Testing - unity](https://github.com/Adithya1798/SDLC_26_HammerHeads/actions/workflows/unity.yml/badge.svg)](https://github.com/Adithya1798/SDLC_26_HammerHeads/actions/workflows/unity.yml)
 
-To view [GIT INSPECTOR] 
+To view [GIT INSPECTOR] https://github.com/Adithya1798/SDLC_26_HammerHeads/graphs/contributors
 
 ## Folder Structure
 Folder             | Description
