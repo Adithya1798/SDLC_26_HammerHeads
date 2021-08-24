@@ -8,7 +8,8 @@
 ## The features of the project
 
 * The program has dynamic memory allocation involved for allocating memory for the matrices i.e 2 dimensional arrays. A structure is implemented for storing the input matrices.
-* The user can select the opeation to be performed by pressing a number on the keyboard. The significance of each number, i.e the operation which it performs will be displayed on the screen during the execution of the program.* Another important feature is that our program involves dynamic memory allocation for the input and after the request is processed the memory is freed leading to judicial utilization of the memory.
+* The user can select the opeation to be performed by pressing a number on the keyboard. The significance of each number, i.e the operation which it performs will be displayed on the screen during the execution of the program.
+* Another important feature is that our program involves dynamic memory allocation for the input and after the request is processed the memory is freed leading to judicial utilization of the memory.
 
 ## Defining Our System
 
