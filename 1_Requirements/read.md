@@ -38,10 +38,10 @@
 
 
 
-## WHERE:
+## WHERE :
  * Students, employees and researchers  all over the world.
 
-## HOW:
+## HOW :
  * Can be executed in a system which has Windows operating system or Linux.
 
 
