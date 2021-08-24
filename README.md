@@ -29,6 +29,7 @@ PS No.    |  Name   |    Features    | Issues Raised |Issues Resolved|No Test Ca
   99005603|Adithya Aras | F_07 | 0 | 0 | 2 | 2 |
   99005620|Bhuvana A N | F_06 | 0 | 0 | 2 | 2 |
   99005613|Yashaswini K | F_04 | 0 | 0 | 2 | 2 |
+  99005628|Adithya V | F_01 | 0 | 0 | 2 | 2 |
 
 | Feature Id | Feature |
 | -----------|---------|
