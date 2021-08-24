@@ -22,6 +22,7 @@ Folder             | Description
 PS No.    |  Name   |    Features    | Issuess Raised |Issues Resolved|No Test Cases|Test Case Pass
 -------   |---------|----------------|----------------|---------------|-------------|--------------
   99005629|Sweta Jayesh Patel|F_03| 0 | 0 | 3 | 3 
+  99005595|Kajjapu Vaishnavi|F_03| 0 | 0 | 3| 3 
 
 | Feature Id | Feature |
 | -----------|---------|
