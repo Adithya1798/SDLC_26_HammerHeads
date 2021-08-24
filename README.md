@@ -31,8 +31,8 @@ PS No.    |  Name   |    Features    | Issues Raised |Issues Resolved|No Test Ca
   99005613|Yashaswini K | F_04 | 0 | 0 | 2 | 2 |
   99005628|Adithya V | F_01 | 0 | 0 | 2 | 2 |
 
-| Feature Id | Feature |
-| -----------|---------|
+| Feature Id | Feature   |
+| -----------|-----------|
 |F_01| Options to select matrix operation|
 |F_02| Operations on two matrices such as addition, subtraction and multiplication are included|
 |F_03| Single matrix operations such as determinant, transpose, inverse and type of a matrix |
