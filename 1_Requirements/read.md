@@ -53,7 +53,8 @@
 | HR03 | user can multiply the matrices | Techincal |  IMPLEMENTED  |
 | HR04 | user can also  find determinant, transpose and inverse of a matrix | Techincal |  IMPLEMENTED  |
 | HR05 | user can also  specify the size of the matrix| Techincal |  IMPLEMENTED  |
-##  Low level Requirements:
+
+##  LOE LEVEL REQUIREMENTS:
  
 | ID | Description | HLR ID | Status (Implemented/Future) |
 | ------ | --------- | ------ | ----- |
