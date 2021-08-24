@@ -19,7 +19,7 @@ Folder             | Description
 
 ## Contributors List and Summary
 
-PS No.    |  Name   |    Features    | Issuess Raised |Issues Resolved|No Test Cases|Test Case Pass
+PS No.    |  Name   |    Features    | Issues Raised |Issues Resolved|No Test Cases|Test Case Pass
 -------   |---------|----------------|----------------|---------------|-------------|--------------
   99005629|Sweta Jayesh Patel|F_03, Report| 0 | 0 | 3 | 3 
   99005595|Kajjapu Vaishnavi|F_02| 0 | 0 | 3| 3 
