@@ -11,7 +11,7 @@ To view [GIT INSPECTOR] https://github.com/Adithya1798/SDLC_26_HammerHeads/graph
 ## Folder Structure
 Folder             | Description
 -------------------| -----------------------------------------
-`1_Requirements`   | Documents detailing requirements and research
+`1_Requirements`   | Documents detailing requirements and research.
 `2_Design`         | Documents specifying design details
 `3_Implementation` | All code and documentation
 `4_Test_plan`      | Documents with test plans and procedures
